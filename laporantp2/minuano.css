@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.atas {
+    /* height: 1300px; */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+
+header {
+    margin-top: 20px;
+    width: 95%;
+    color: white;
+    height: 250px;
+    border-top: 1px solid rgb(96, 96, 96);
+    display: flex;
+    justify-content: space-between;
+    margin-left: 32.5px;
+    opacity: 0; /* Awalnya transparan */
+    transform: translateY(100px); /* Memulai di bawah posisi aslinya */
+    animation: slideUp 1s ease-out forwards; /* Menerapkan animasi */
+
+}
+
+header .side_header a {
+    margin: 0 10px;
+}
+.isi_header {
+    height: 200px;
+    width: 95%;
+    margin-left: 32.5px;
+    display: flex;
+    justify-content: space-between; /* Mengatur agar konten berada di awal */
+    color: white;
+    border-top: 1px solid rgb(96, 96, 96);
+    /* background-color: aqua; */
+    opacity: 0; /* Awalnya transparan */
+    transform: translateY(10px); /* Memulai di bawah posisi aslinya */
+    animation: slideUp 1.5s ease-out forwards; /* Menerapkan animasi */
+
+}
+.isi_header .space_isi_header{
+    display: flex;
+    justify-content: space-between;
+}
+.isi_minuano{
+    height: 300px;
+    width: 95%;
+    margin-left: 32.5px;
+    /* background-color: rgb(158, 158, 158); */
+    text-align: center;
+    color: white;
+    border-top: 1px solid rgb(96, 96, 96);
+    /* opacity: 0; Awalnya transparan */
+    /* transform: translateY(100px); Memulai di bawah posisi aslinya */
+    /* animation: slideUp 2s ease-out forwards; Menerapkan animasi */
+
+}
+.sobre{
+    width: 95%;
+    margin-left: 32.5px;
+    /* background-color: aqua; */
+    border-top: 1px solid rgb(96, 96, 96);
+    color: white;
+    padding-bottom: 100px;
+}
+
+.sobre_kosong{
+    height: 100px; 
+    border-top: 1px solid rgb(96, 96, 96); 
+    /* width: 95%; */
+    margin-left: 32.5px;
+}
+.kosong{
+    height: 750px;
+    background-color: rgb(104, 122, 122);
+    opacity: 0%;
+}
+
+.tengah {
+    background-color: black;
+   
+}
+.nossos{
+    width: 95%;
+    margin-left: 32.5px;
+    height: 750px;
+    background-color: black;
+    color: white;
+    padding-top: 100px;
+}
+.MODELAGEM .nosso{
+    width: 95%;
+    margin-left: 32.5px;
+    /* background-color: rgb(176, 26, 26); */
+    color: white;
+    padding-top: 100px;
+}
+.isi_nossos{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+}
+.konten_isi_nossos{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    /* margin: 0 100px; */
+    /* background-color: antiquewhite; */
+}
+.gambar2{
+    height: 700px;
+    /* background-color: aqua; */
+    background-image: url(source/gambar2.png);
+}
+.isi_nossoss{
+    /* margin-top: 100px; */
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+.MODELAGEM{
+    height: 400px;
+/* background-color: aqua; */
+}
+.gambar3{
+        height: 700px;
+        /* background-color: aqua; */
+        background-image: url(source/gambar3.png);
+}
+
+.footer{
+height: 700px;
+/* background-color: aqua; */
+width: 95%;
+margin-left: 32.5px;
+color: white;
+border-top: 1px solid rgb(96, 96, 96);
+
+}
+.isi_footer{
+    display: flex;
+    justify-content: space-between;
+}
+.isi_footer img{
+    height: 80px;
+    width: 80px;
+}
+.img img{
+width: 100%;
+position: fixed;
+z-index: -99;
+}
+.tengah .contato{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.reset{
+    border:none;
+    background-color: black;
+    color:white;
+    border-bottom: 1px solid rgb(96, 96, 96);
+    outline: none;
+    font-size: 15px;
+    width: 247px;
+    padding-bottom: 5px; 
+}
+.reset:hover{
+    border:none;
+    background-color: black;
+    color:white;
+    border-bottom: 1px solid white;
+    outline: none;
+    font-size: 15px;
+    width: 247px;
+    padding-bottom: 5px; 
+}
+.button_enviar{
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    text-align: center;
+    align-content: center;
+    width: 250px;
+    height: 40px;
+    border:1px solid rgb(96, 96, 96);
+}
+.button_enviar:hover{
+    border:1px solid white;
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px); /* Awal dari bawah */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Muncul ke posisi aslinya */
+    }
+}
